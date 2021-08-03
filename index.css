@@ -1,0 +1,84 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./fonts/Halva-qZY3r.otf);
+}
+
+body {
+    margin: 0px;
+}
+
+.nav-wrapper {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar {
+    padding: 10px 20px;
+    background-color: rgb(93, 93, 255);
+}
+
+.navbar-box {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 70%;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.navbar-searchbox {
+    width: 100%;
+    position: relative;
+}
+
+.navbar-login {
+    width: 50%;
+    text-align: center;
+}
+
+.navbar-cart, .navbar-wishlist {
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+.navbar-searchbox input {
+    width: 90%;
+    padding: 10px 20px;
+}
+
+.navbar-login button {
+    padding: 10px 30px;
+    border: none;
+    background-color: white;
+    color: rgb(93, 93, 255);
+}
+
+.navbar-logo img {
+    width: 70px;
+    height: 55px;
+}
+
+.navbar-searchbox i {
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    font-size: 1.1em;
+    color: rgb(93, 93, 255);
+}
+
+.navbar-cart p, .navbar-wishlist p {
+    margin: 0px;
+    display: inline;
+}
+
+.navbar-cart i:nth-child(3), .navbar-cart i:nth-child(1) {
+    display: none;
+    margin-right: 10px;
+}
+
+
