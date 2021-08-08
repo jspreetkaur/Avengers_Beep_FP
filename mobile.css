@@ -1,0 +1,264 @@
+@media only screen and (max-width: 820px) {
+    .navbar-box {
+        flex-direction: column;
+    }
+    .navbar {
+        padding: 10px 20px;
+        background-color: rgb(93, 93, 255);
+        position: relative;
+    }
+    .navbar-logo {
+        width: 100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .navbar-searchbox input {
+        width: 85%;
+        text-align: left;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .navbar-searchbox i {
+        top: 20px;
+        right: 10%;
+    }
+    .navbar-login {
+        display: none;
+    }
+    .navbar-cart {
+        position: absolute;
+        right: 20px;
+        width: inherit;
+    }
+    .navbar-cart p,.navbar-wishlist {
+        display: none;
+    }
+    .navbar-cart a:nth-child(3),.navbar-cart a:nth-child(1),.navbar-cart a:nth-child(4) {
+        display: inline;
+        margin-left: 5px;
+    }
+    /*login-------------------------------------------------------------------------------------------------------------------*/
+    .login-wrapper {
+        border-radius: 0px;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        padding: 0px;
+    }
+    .login-inputs div input {
+        width: 100%;
+    }
+    /*register-------------------------------------------------------------------------------------------------------------------*/
+    .register-wrapper {
+        border-radius: 0px;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        padding: 0px;
+    }
+    .register-inputs div input {
+        width: 100%;
+    }
+    /*Slider image----------------------------------------------------------------------------------------------------------------*/
+    .slider-image {
+        margin-top: 94px;
+        height: 300px;
+    }
+    /*product slider------------------------------------------------------------------------------------------------------------*/
+    .product-display-slider-heading h1 {
+        font-size: 0.9em;
+    }
+    .product-display-slider-heading button {
+        padding: 5px 10px;
+    }
+    .product-display-slider-box img {
+        width: 100px;
+        height: 150px;
+    }
+    .product-display-slider-box p {
+        font-size: 0.9em;
+    }
+    .product-display-slider {
+        margin-top: 50px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .product-display-slider2 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /*details*/
+    .details-card-name ul {
+        display: none;
+    }
+    .card-detail-des-box {
+        flex-direction: column;
+    }
+    .details-card-image img {
+        width: 100px;
+        height: 150px;
+        margin-right: 20px;
+    }
+    .global-btn {
+        margin-top: 40px;
+        width: 100%
+        
+    }
+    .details-card-price {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .details-card-box {
+        padding: 0px;
+        padding-top: 130px;
+    }
+    .details-card-name div h1{
+        font-size: 0.9em;
+    }
+    .details-card{
+        padding:10px 5px;
+    }
+    .details-card-price b{
+        font-size: 1.2em;
+    }
+    .details-card-price p{
+        display: inline;
+    }
+    .detail-card-wishlist{
+        top: 47px;
+    right: 20px;
+    }
+    .offer-cards-box{
+        flex-direction: column;
+   
+    }
+    .offer-cards1,.offer-cards2,.offer-cards3{
+        margin: 0px;
+        margin-top: 10px;
+    }
+    /*product detail*/
+    .product-detail-conatiner{
+        flex-direction: column;
+        padding-top: 129px;
+        
+    }
+    .product-detail-image{
+        height: 40vh;
+        width: 100%;
+    }
+    /*checkout-----------------------------------------------------------------------------------------------------------------*/
+    .checkout-container{
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding-top: 129px;
+        background-color: #B8B8B8;
+        background-image: url("");
+        height: auto;
+    }
+    .checkout-box{
+        padding: 10px;
+    }
+    .checkout-name{
+        flex-direction: column;
+    }
+    .checkout-name div{
+        margin: 10px 0px;
+    }
+    .checkout-name input {
+width: 93%;
+
+    }
+    .checkout-city{
+        flex-direction: column;
+    }
+    .checkout-city div{
+        margin: 10px 0px;
+    }
+    .checkout-payment-box{
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .checkout-shipping-charge,.checkout-total-price{
+        padding: 20px;
+    }
+    .checkout-button{
+        padding: 20px;
+    }
+    .regi{
+        padding: 0px !important;
+    }
+    .u,.e,.l{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 305px) {
+    .product-display-slider-heading h1 {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 650px) {
+    .shopping-cart {
+        margin: 0;
+        padding-top: 150px;
+        border-top: 1px solid #eee;
+   }
+    .column-labels {
+        display: none;
+   }
+    .product-image {
+        float: right;
+        width: auto;
+   }
+    .product-image img {
+        margin: 0 0 10px 10px;
+   }
+    .product-details {
+        float: none;
+        margin-bottom: 10px;
+        width: auto;
+   }
+    .product-price {
+        clear: both;
+        width: 70px;
+   }
+    .product-quantity {
+        width: 100px;
+   }
+    .product-quantity input {
+        margin-left: 20px;
+   }
+    .product-quantity:before {
+        content: 'x';
+   }
+    .product-removal {
+        width: auto;
+   }
+    .product-line-price {
+        float: right;
+        width: 70px;
+   }
+  
+}
+@media screen and (max-width: 350px) {
+    .product-removal {
+        float: right;
+   }
+    .product-line-price {
+        float: right;
+        clear: left;
+        width: auto;
+        margin-top: 10px;
+   }
+    .product .product-line-price:before {
+        content: 'Item Total: $';
+   }
+    .totals .totals-item label {
+        width: 60%;
+   }
+    .totals .totals-item .totals-value {
+        width: 40%;
+   }
+}
