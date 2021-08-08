@@ -17,266 +17,121 @@
 
 <body>
     <!--navbar--------------------------------------------------------------------------------------------------------------------->
+    <!--navbar--------------------------------------------------------------------------------------------------------------------->
     <div class="nav-wrapper">
         <nav class="navbar">
             <div class="navbar-box">
                 <div class="navbar-logo">
-                    <img src="./images/logo.png"
-                        alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <div class="navbar-searchbox">
 
-                    <i class="fa fa-search"></i>
+                    <i class="fa fa-search" id="search-btn"></i>
                     <input type="text" placeholder="Search For Products ,Brands" value="Search For Products ,Brands"
-                        onfocus="if(this.value==this.defaultValue)this.value='';"
+                        id="search" onfocus="if(this.value==this.defaultValue)this.value='';"
                         onblur="if(this.value=='')this.value=this.defaultValue;" />
 
                 </div>
                 <div class="navbar-login">
-                    <a href="#"><button>Login</button></a>
+                    <a href="./loginpage/login.html"><button id="nav-login">Login</button></a>
 
                 </div>
                 <div class="navbar-wishlist">
-                    
-                    <i class="fa fa-heart"></i>
-                    <p> Wishlist</p>
+                    <a href="./wishlist/wishlist.html">
+                        <i class="fa fa-heart"></i>
+                        <p> Wishlist</p>
+                    </a>
+                </div>
+                <div class="navbar-wishlist">
+                    <a href="./order/order.html">
+                        <i class="fa fa-book"></i>
+                        <p> Orders</p>
+                    </a>
                 </div>
                 <div class="navbar-cart">
-                    <i class="fa fa-heart"></i>
-                    <i class="fa fa-shopping-cart"></i>
-                    <i class="fa fa-user-circle"></i>
-                    
-                    <p> Cart</p>
+                    <a href="./wishlist/wishlist.html">
+                        <i class="fa fa-heart"></i></a>
+                    <a href="./cart/cart.html">
+                        <i class="fa fa-shopping-cart"></i></a>
+                    <a href="./loginpage/login.html"> <i class="fa fa-user-circle"></i></a>
+                    <a href="./order/order.html">
+                        <i class="fa fa-book"></i>
+                    </a>
+                    <a href="./cart/cart.html">
+                        <p> Cart</p>
+                    </a>
                 </div>
-                
+
             </div>
             <div>
 
             </div>
         </nav>
     </div>
- <!--slider---------------------------------------------------------------------------------------------------------------------->
- <div class="slider-box">
 
-    <div class="slider-pic"><img src="./images/slider1.jpg" alt="slider Image" class="slider-image" /></div>
-    <div class="slider-pic"><img src="./images/slider2.jpg" alt="slider Image" class="slider-image" /></div>
-    <div class="slider-pic"><img src="./images/slider3.jpg" alt="slider Image" class="slider-image" /></div>
-    <div class="slider-pic"><img src="./images/slider4.jpg" alt="slider Image" class="slider-image" /></div>
 
-</div>
+    <!--slider---------------------------------------------------------------------------------------------------------------------->
+    <div class="slider-box">
+
+        <div class="slider-pic"><img src="./images/slider1.jpg" alt="slider Image" class="slider-image" /></div>
+        <div class="slider-pic"><img src="./images/slider2.jpg" alt="slider Image" class="slider-image" /></div>
+        <div class="slider-pic"><img src="./images/slider3.jpg" alt="slider Image" class="slider-image" /></div>
+        <div class="slider-pic"><img src="./images/slider4.jpg" alt="slider Image" class="slider-image" /></div>
+
+    </div>
 <!--product display------------------------------------------------------------------------------------------------------------------->
-<div class="product-display-slider">
-    <div class="product-display-slider-heading">
-        <h1>
-            Shops For Men T-shirts
-        </h1>
-       <a href="#"> <button>
-            View all
-        </button></a>
+    <div class="product-display-slider">
+        <div class="product-display-slider-heading">
+            <h1>
+                Shops For Men T-shirts
+            </h1>
+            <button id="view1">
+                View all
+            </button>
+        </div>
+        <div class="product-display-slider-cards" id="slider1">
+
+
+        </div>
+
     </div>
-    <div class="product-display-slider-cards">
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
+    <!--card------------------------------------------------------------------------------------------------------------->
+    <div class="offer-cards-box">
+        <div class="offer-cards1"></div>
+        <div class="offer-cards2"></div>
+        <div class="offer-cards3"></div>
+    </div>
+    <div class="product-display-slider2">
+        <div class="product-display-slider-heading">
+            <h1>
+                Shops For Phones
+            </h1>
+            <button id="view2">
+                View all
+            </button>
         </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg" />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
+        
+        <div class="product-display-slider-cards" id="slider2">
+
+
         </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
+    </div>
+    <div class="product-display-slider2" >
+        <div class="product-display-slider-heading">
+            <h1>
+                Shops For Laptops
+            </h1>
+            <button id="view3">
+                View all
+            </button>
         </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img src="./images/Men_TShirt.jpg"/>
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
+        <div class="product-display-slider-cards" id="slider3">
+
+
         </div>
 
     </div>
 
-</div>
- <!--card------------------------------------------------------------------------------------------------------------->
- <div class="offer-cards-box">
-    <div class="offer-cards1"></div>
-    <div class="offer-cards2"></div>
-    <div class="offer-cards3"></div>
-</div>
-<div class="product-display-slider2">
-    <div class="product-display-slider-heading">
-        <h1>
-            Shops For Men Trousers
-        <button>
-            View all
-        </button>
-    </div>
-    <div class="product-display-slider-cards">
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-
-    </div>
-
-</div>
-<div class="product-display-slider2">
-    <div class="product-display-slider-heading">
-        <h1>
-            Shops For Men Joggers
-        </h1>
-        <button>
-            View all
-        </button>
-    </div>
-    <div class="product-display-slider-cards">
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-        <div class="product-display-slider-box">
-            <img />
-            <p>nfev dcendkce k</p>
-            <b>20$</b>
-        </div>
-
-    </div>
-
-</div>
 
 
     <!--jquery cdn----------------------------------------------------------------------------------------------------------------------->
