@@ -4,10 +4,11 @@ let run = true;
 document.getElementById('reg-btn').onclick = () => {
     let mail = document.getElementById('mail').value;
     let name = document.getElementById('name').value;
+    let gender=document.getElementById('gender').value;
     let pass = document.getElementById('pass').value;
     let pass2 = document.getElementById('pass2').value;
 
-    if (mail == "" || name == ""  || pass == "" || pass2 == "" ) {
+    if (mail == "" || name == "" || pass == "" || pass2 == "") {
         run = false;
         alert("feilds should not be empty");
         return;
@@ -16,17 +17,17 @@ document.getElementById('reg-btn').onclick = () => {
     if (pass != pass2) {
         run = false;
         alert("password not match");
-       
+
     }
-    
+
     if (pass.length < 7) {
-        alert("Password must be greater than 6");
+        alert("password must be greater than 6");
         run = false;
     }
 
     ValidateEmail(mail);
 
-    if (mail != "" && name != ""  && pass != "" && pass2 != ""  && pass == pass2 && ValidateEmail(mail) == true && pass > 6) {
+    if (mail != "" && name != "" && pass != "" && pass2 != "" && pass == pass2 && ValidateEmail(mail) == true && pass > 6) {
         run = true;
     }
 
@@ -34,12 +35,11 @@ document.getElementById('reg-btn').onclick = () => {
     if (run == true) {
 
         let val = {
-            mail: mail, name: name, pass: pass
+            mail: mail, name: name, pass: pass,gender:gender
         }
 
 
         add(val)
-        window.location="../loginpage/login.html"
     }
 
 
@@ -101,6 +101,8 @@ function add(obj, info) {
             if (info) { console.log("Rows has been added"); }
             else { console.log("Rows has been updated"); }
             console.info(objectStoreRequest.result);
+            window.location = "../loginpage/login.html"
+
         }
     });
 }
