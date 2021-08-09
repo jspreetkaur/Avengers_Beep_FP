@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--icon------------------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../mobile.css" />
+
+    <title>Ecommerce</title>
+</head>
+
+<body>
+   <!--navbar--------------------------------------------------------------------------------------------------------------------->
+   <div class="nav-wrapper">
+    <nav class="navbar">
+        <div class="navbar-box">
+            <div class="navbar-logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar-searchbox">
+
+                <i class="fa fa-search" id="search-btn"></i>
+                <input type="text" placeholder="Search For Products ,Brands" value="Search For Products ,Brands"
+                    id="search" onfocus="if(this.value==this.defaultValue)this.value='';"
+                    onblur="if(this.value=='')this.value=this.defaultValue;" />
+
+            </div>
+            <div class="navbar-login">
+                <a href="../loginpage/login.html"><button id="nav-login">Login</button></a>
+
+            </div>
+            <div class="navbar-wishlist">
+                <a href="../wishlist/wishlist.html">
+                    <i class="fa fa-heart"></i>
+                    <p> Wishlist</p>
+                </a>
+            </div>
+            <div class="navbar-wishlist">
+                <a href="../order/order.html">
+                    <i class="fa fa-book"></i>
+                    <p> Orders</p>
+                </a>
+            </div>
+            <div class="navbar-cart">
+                <a href="../wishlist/wishlist.html">
+                    <i class="fa fa-heart"></i></a>
+                <a href=".  /cart.html">
+                    <i class="fa fa-shopping-cart"></i></a>
+                <a href="../loginpage/login.html"> <i class="fa fa-user-circle"></i></a>
+                <a href="../order/order.html">
+                    <i class="fa fa-book"></i>
+                </a>
+                <a href=".  /cart.html">
+                    <p> Cart</p>
+                </a>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+    </nav>
+</div>
+
+
+    
+
+    <div class="shopping-cart" id="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity" style="margin-top: 0px;">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price" style="margin-top: 0px;">Total</label>
+        </div>
+
+        
+
+        
+
+    </div>
+
+
+
+    <!--jquery cdn----------------------------------------------------------------------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--script tag for index.js----------------------------------------------------------------------------------------------------------->
+    <script src="cart.js"></script>
+</body>
+
+</html>
