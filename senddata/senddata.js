@@ -1,4 +1,5 @@
 document.getElementById('data').onclick = () => {
+ 
     let request = window.indexedDB.open("products", 1)
         , db, transition, store, index
         ;
@@ -31,7 +32,9 @@ document.getElementById('data').onclick = () => {
         console.log('error' + e.target.errorCode);
     }
     request.onsuccess = (e) => {
+     
         db = request.result;
+        alert("hlo")
         transition = db.transaction("product", "readwrite");
         store = transition.objectStore("product");
         index = store.index("name");
@@ -39,7 +42,7 @@ document.getElementById('data').onclick = () => {
             console.log('error' + e.target.errorCode);
         }
 
-
+       
         store.put({ "id": 1, "name": "Lenovo ThinkPad E14 ", "originalprice": 500, "price": 300, "description": ["Pre-installed Genuine Windows 10 OS", "Preloaded with MS Office", " Light Laptop without Optical Disk Drive", "14 inch FHD LED Backlit Anti-glare Display"], "category": "laptop", "image": "https://rukminim1.flixcart.com/image/200/200/cms-rpd-images/f3e023b33dba4a3f9c788490bbc1a1c9_17a14ee57d5_image.png?q=90" })
         store.put({
             "id": 2, "name": "acer Aspire 5", "originalprice": 200, "price": 109, "description": ["Stylish & Portable Thin and Light Laptop",
