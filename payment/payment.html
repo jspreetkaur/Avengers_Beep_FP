@@ -114,7 +114,32 @@
     <!--jquery cdn----------------------------------------------------------------------------------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--script tag for index.js----------------------------------------------------------------------------------------------------------->
-   
+    <script>
+        if(localStorage.getItem("login")=="true"){
+        document.getElementById("nav-login").innerHTML="Profile";
+
+        document.getElementById("nav-login").onclick=()=>{
+            window.location="../profile/profile.html"
+
+        }
+        document.getElementById("login-profile").onclick=()=>{
+            window.location="../profile/profile.html"
+
+        }
+    }
+    else{
+        document.getElementById("nav-login").innerHTML="Login"
+        document.getElementById("nav-login").onclick=()=>{
+        window.location="../loginpage/login.html"
+
+        }
+        document.getElementById("login-profile").onclick=()=>{
+            window.location="../loginpage/login.html"
+
+        }
+
+    }
+    </script>
 </body>
 
 </html>
