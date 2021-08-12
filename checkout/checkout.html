@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--icon------------------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../tablet.css" />
+    <link rel="stylesheet" href="../mobile.css" />
+
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <!--navbar--------------------------------------------------------------------------------------------------------------------->
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <div class="navbar-box">
+                <div class="navbar-logo">
+                    <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                </div>
+                <div class="navbar-searchbox">
+
+                    <i class="fa fa-search" id="search-btn"></i>
+                    <input type="text" placeholder="Search For Products ,Brands" value="Search For Products ,Brands"
+                        id="search" onfocus="if(this.value==this.defaultValue)this.value='';"
+                        onblur="if(this.value=='')this.value=this.defaultValue;" />
+
+                </div>
+                <div class="navbar-login">
+                    <button id="nav-login">Login</button>
+
+                </div>
+                <div class="navbar-wishlist">
+                    <a href="../wishlist/wishlist.html">
+                        <i class="fa fa-heart"></i>
+                        <p> Wishlist</p>
+                    </a>
+                </div>
+                <div class="navbar-wishlist">
+                    <a href="../order/order.html">
+                        <i class="fa fa-book"></i>
+                        <p> Orders</p>
+                    </a>
+                </div>
+                <div class="navbar-cart">
+                    <a href="../wishlist/wishlist.html">
+                        <i class="fa fa-heart"></i></a>
+                    <a href="../cart/cart.html">
+                        <i class="fa fa-shopping-cart"></i></a>
+                    <a> <i class="fa fa-user-circle" id="login-profile"></i></a>
+                    <a href="../order/order.html">
+                        <i class="fa fa-book"></i>
+                    </a>
+                    <a href="../cart/cart.html">
+                        <p> Cart</p>
+                    </a>
+                </div>
+
+            </div>
+            <div>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="checkout-container">
+        <div class="checkout-box">
+            <div class="checkout-heading">
+                Address details
+            </div>
+            <div class="checkout-name">
+                <div>
+                    <label for="checkout-firstname">First Name</label>
+                    <input type="text" placeholder="First Name" id="checkout-firstname" />
+                </div>
+
+                <div>
+                    <label for="checkout-lastname">Last Name</label>
+                    <input type="text" placeholder="Last Name" id="checkout-lastname" />
+                </div>
+            </div>
+            <div class="checkout-address">
+                <div>
+                    <label for="checkout-address">Address</label>
+                    <input type="text" placeholder="Address" id="checkout-address" />
+                </div>
+            </div>
+            <div class="checkout-city">
+                <div>
+                    <label for="checkout-city">City</label>
+                    <select placeholder="First Name" id="checkout-city">
+                        <option value="Los Angeles">
+                            Los Angeles
+                        </option>
+                        <option value="	Chicago">
+                            Chicago
+                        </option>
+                        <option value="Houston">
+                            Houston
+                        </option>
+                        <option value="	Dallas">
+                            Dallas
+                        </option>
+                        <option value="Canada">
+                            Canada
+                        </option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="checkout-zip">Zip Code</label>
+                    <input type="text" placeholder="Zip Cone" id="checkout-zip" />
+                </div>
+            </div>
+            <div class="checkout-country">
+                <div>
+                    <label for="checkout-country">Country</label>
+                    <input type="text" placeholder="Country" id="checkout-country" />
+                </div>
+            </div>
+        </div>
+        <div class="checkout-payment-box">
+            <div class="checkout-shipping-charge">
+                <span>You shopped</span>
+                <span id="ship-total">105$</span>
+            </div>
+            <div class="checkout-shipping-charge">
+                <span>Additional Shipping Chages</span>
+                <span>5$</span>
+            </div>
+            <div class="checkout-total-price">
+                <span>Total</span>
+                <span id="ship-total2">110$</span>
+
+            </div>
+            <div class="checkout-button">
+                <button id="proceed">Proceed To payment</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--jquery cdn----------------------------------------------------------------------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--script tag for index.js----------------------------------------------------------------------------------------------------------->
+    <script src="./checkout.js"></script>
+</body>
+
+</html>
