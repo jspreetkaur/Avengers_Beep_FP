@@ -61,6 +61,7 @@ window.onload = () => {
 
             for (let i = 0; i < s1; i++) {
                 if (items.result[i].mail == localStorage.getItem("mail")) {
+                    x = x + items.result[i].price;
                     var html = `
                     <div class="product-image">
                 <img src="${items.result[i].image}">
