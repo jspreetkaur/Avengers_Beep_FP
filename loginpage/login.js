@@ -39,6 +39,7 @@ let y=false;
         for (let i = 0; i < s1; i++) {
             if(mail==items.result[i].mail&&pass==items.result[i].pass){
                 localStorage.setItem("mail",mail);
+                localStorage.setItem("login","true");
                 y=true;
                 window.location='../index.html';
             }
