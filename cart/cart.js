@@ -51,7 +51,7 @@ window.onload = () => {
             console.log('error ' + e.target.errorCode);
         }
 
-        let x = 0;
+        var x = 0;
         let items = storecart.getAll();
 
 
