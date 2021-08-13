@@ -1,4 +1,28 @@
 window.onload = () => {
+    if(localStorage.getItem("login")=="true"){
+        document.getElementById("nav-login").innerHTML="Profile";
+
+        document.getElementById("nav-login").onclick=()=>{
+            window.location="../profile/profile.html"
+
+        }
+        document.getElementById("login-profile").onclick=()=>{
+            window.location="../profile/profile.html"
+
+        }
+    }
+    else{
+        document.getElementById("nav-login").innerHTML="Login"
+        document.getElementById("nav-login").onclick=()=>{
+        window.location="../loginpage/login.html"
+
+        }
+        document.getElementById("login-profile").onclick=()=>{
+            window.location="../loginpage/login.html"
+
+        }
+
+    }
     let request = window.indexedDB.open("products")
         , db, tx, store
         ;
